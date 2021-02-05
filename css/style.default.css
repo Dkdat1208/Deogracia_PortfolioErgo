@@ -573,16 +573,7 @@ nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
   margin-bottom: 20px;
 }
 
-/*
-*
-* =====================
-* MAP
-* =====================
-*
-*/
-#map {
-  height: 400px;
-}
+
 
 /*
 *
@@ -611,21 +602,7 @@ footer.main-footer p.social a {
   transition: all 0.3s;
 }
 
-footer.main-footer p.social a.facebook {
-  background-color: #4460ae;
-}
 
-footer.main-footer p.social a.gplus {
-  background-color: #c21f25;
-}
-
-footer.main-footer p.social a.instagram {
-  background-color: #cd4378;
-}
-
-footer.main-footer p.social a.email {
-  background-color: #4a7f45;
-}
 
 footer.main-footer p {
   margin: 0;
