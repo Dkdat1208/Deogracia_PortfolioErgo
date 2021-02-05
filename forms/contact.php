@@ -2,19 +2,25 @@
  
  if(isset ($_POST['submit'])){
 
-  $receiving_email_address = 'deograciadilou@yahoo.fr';
+
 
   $nom =  $_POST['name'];
   $prenom =  $_POST['surname'];
-  $sender_email =  $_POST['email'];
+  $from =  $_POST['email'];
   $message =  $_POST['message'];
+  $newmessage="Nom: "+$nom+"  Prenom: " + $prenom+ " "+ $message;
 
 
   $to="deograciadilou@yahoo.fr";
   $subject="";
-  $header="De :" .$sender_email;
-  mail($to, $subject, $message, $header);
-  echo "L'email a été envoyé.";
+  $headers="De :" .$from;
+  if(!mail($to, $subject, $newmessage, $headers)){
+      echo 'erreur' ;
+  }else{
+    echo "L'email a été envoyé.";
+  }
+ 
+  
 
  }
 
