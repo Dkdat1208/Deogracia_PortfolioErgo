@@ -14,6 +14,7 @@
   $subject="";
   $header="De :" .$sender_email;
   mail($to, $subject, $message, $header);
+  echo "L'email a été envoyé.";
 
  }
 
